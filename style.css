@@ -856,9 +856,9 @@ h4 {
 
 .gallery-item {
     flex: 0 0 40vw;
-    height: 50vh;
+    height: auto;
     max-width: 600px;
-    max-height: 450px;
+    max-height: 80vh;
     scroll-snap-align: center;
     cursor: pointer;
     overflow: hidden;
@@ -870,7 +870,7 @@ h4 {
 
 .gallery-item .image-wrapper {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
@@ -889,8 +889,9 @@ h4 {
 
 .gallery-item .image-wrapper img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
 }
 
 /* --- Academic Timeline --- */
@@ -1143,7 +1144,6 @@ h4 {
 
     .gallery-item {
         flex: 0 0 60vw;
-        height: 40vh;
     }
 }
 
@@ -1293,12 +1293,6 @@ h4 {
 
     .gallery-item {
         flex: 0 0 85vw;
-        height: 50vh;
-        max-height: 50vh;
-    }
-
-    .gallery-item .image-wrapper img {
-        object-fit: contain;
     }
 
     .glass-card {
