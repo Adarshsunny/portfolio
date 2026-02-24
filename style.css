@@ -1229,6 +1229,18 @@ h4 {
         font-size: 0.8rem;
     }
 
+    @keyframes slideUpCenter {
+        from {
+            opacity: 0;
+            transform: translate(-50%, 30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+
     .subject-image {
         position: relative;
         height: 58vh;
@@ -1238,7 +1250,7 @@ h4 {
         transform: translateX(-50%);
         margin-bottom: 2rem;
         z-index: 5;
-        animation: slideUp 1.2s ease-out forwards;
+        animation: slideUpCenter 1.2s ease-out forwards;
     }
 
     .bg-text {
