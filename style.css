@@ -1148,15 +1148,26 @@ h4 {
     }
 
     .subject-image {
+        position: relative;
         left: 50%;
-        height: 75%;
+        height: 65vh;
+        top: auto;
+        bottom: auto;
         transform: translateX(-50%);
+        margin-bottom: 2rem;
+        z-index: 5;
         animation: slideUpCenter 1.5s ease-out forwards;
     }
 
     .bg-text {
-        bottom: 5%;
+        position: relative;
+        width: 100%;
+        top: auto;
+        bottom: auto;
+        left: auto;
         text-align: center;
+        z-index: 10;
+        margin-bottom: 2rem;
     }
 
     .bg-text h1 {
