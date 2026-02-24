@@ -36,9 +36,20 @@ body {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 
-    /* Global Stadium Background (Desktop) */
-    background: url('stadium-bg4.jpg') center/cover no-repeat fixed;
+    /* Global Stadium Background Fallback */
     background-color: var(--bg-dark);
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('stadium-bg4.jpg') center/cover no-repeat;
+    z-index: -2;
+    pointer-events: none;
 }
 
 /* Global Overlay */
@@ -954,12 +965,14 @@ h4 {
 /* --- Footer Section --- */
 .footer-section {
     position: relative;
-    padding: 0;
+    padding: 4rem 0 2rem;
+    height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #000;
+    overflow-y: visible;
 }
 
 .footer-section::before {
@@ -981,7 +994,7 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     padding: 0 5%;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .footer-top {
@@ -1158,8 +1171,8 @@ h4 {
         display: block;
     }
 
-    body {
-        background: url('stadium-bg3.jpg') center/cover no-repeat fixed;
+    body::after {
+        background: url('stadium-bg3.jpg') center/cover no-repeat;
     }
 
     /* Redesigned Hero Mobile adjustments */
@@ -1248,9 +1261,10 @@ h4 {
     }
 
     .footer-section {
-        padding: 4rem 1rem 1rem 1rem;
-        min-height: auto;
-        /* let it grow if needed on mobile */
+        padding: 4rem 1rem 2rem 1rem;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: visible;
     }
 
     .footer-container {
@@ -1287,8 +1301,32 @@ h4 {
     }
 
     /* Original Page Adjustments */
+    body {
+        scroll-snap-type: none;
+    }
+
+    .page {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: visible;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        justify-content: flex-start;
+    }
+
+    .photo-card {
+        height: 300px;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .achievements-grid,
+    .timeline {
+        max-height: none;
+        overflow-y: visible;
     }
 
     .section-title {
