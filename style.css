@@ -490,7 +490,7 @@ h4 {
 }
 
 .bg-text h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     line-height: 0.85;
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
@@ -1130,7 +1130,7 @@ h4 {
     }
 
     .bg-text h1 {
-        font-size: 18vw;
+        font-size: 14vw;
     }
 
     .hero-subtitle {
@@ -1245,7 +1245,7 @@ h4 {
     }
 
     .bg-text h1 {
-        font-size: 16vw;
+        font-size: 12vw;
         line-height: 1;
     }
 
@@ -1361,7 +1361,7 @@ h4 {
     }
 
     .bg-text h1 {
-        font-size: 12vw;
+        font-size: 11vw;
     }
 
     .hero-subtitle {
