@@ -1232,12 +1232,12 @@ h4 {
     @keyframes slideUpCenter {
         from {
             opacity: 0;
-            transform: translate(-50%, 30px);
+            transform: translate(-100%, 30px);
         }
 
         to {
             opacity: 1;
-            transform: translate(-50%, 0);
+            transform: translate(-100%, 0);
         }
     }
 
@@ -1247,7 +1247,7 @@ h4 {
         top: auto;
         bottom: auto;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
         margin-bottom: 2rem;
         z-index: 5;
         animation: slideUpCenter 1.2s ease-out forwards;
