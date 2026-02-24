@@ -515,14 +515,14 @@ h4 {
 .subject-image {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 78%;
     transform: translateX(-50%);
     z-index: 3;
     height: 95%;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%);
-    animation: slideUpFade 1.5s ease-out forwards;
+    animation: slideInRight 1.5s ease-out forwards;
 }
 
 .subject-image img {
