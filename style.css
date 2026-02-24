@@ -1226,8 +1226,8 @@ h4 {
         height: 58vh;
         top: auto;
         bottom: auto;
-        left: auto;
-        transform: none;
+        left: 50%;
+        transform: translateX(-50%);
         margin-bottom: 2rem;
         z-index: 5;
         animation: slideUp 1.2s ease-out forwards;
