@@ -525,6 +525,18 @@ h4 {
     animation: slideInRight 1.5s ease-out forwards;
 }
 
+@keyframes slideUpCenter {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
 .subject-image img {
     height: 100%;
     width: auto;
@@ -1138,6 +1150,8 @@ h4 {
     .subject-image {
         left: 50%;
         height: 75%;
+        transform: translateX(-50%);
+        animation: slideUpCenter 1.5s ease-out forwards;
     }
 
     .bg-text {
@@ -1146,7 +1160,7 @@ h4 {
     }
 
     .bg-text h1 {
-        font-size: 14vw;
+        font-size: 10vw;
     }
 
     .hero-subtitle {
@@ -1239,18 +1253,6 @@ h4 {
 
     .stat-block p {
         font-size: 0.8rem;
-    }
-
-    @keyframes slideUpCenter {
-        from {
-            opacity: 0;
-            transform: translate(-50%, 30px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translate(-50%, 0);
-        }
     }
 
     .subject-image {
