@@ -1293,7 +1293,12 @@ h4 {
 
     .gallery-item {
         flex: 0 0 85vw;
-        height: 35vh;
+        height: 50vh;
+        max-height: 50vh;
+    }
+
+    .gallery-item .image-wrapper img {
+        object-fit: contain;
     }
 
     .glass-card {
