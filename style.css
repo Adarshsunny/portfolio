@@ -379,14 +379,24 @@ h4 {
 }
 
 .modal-content {
-    background-color: var(--bg-secondary);
     margin: auto;
-    padding: 20px;
-    border: 1px solid var(--accent-red);
-    width: 80%;
-    max-width: 600px;
-    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
     position: relative;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .close-btn {
