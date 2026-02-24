@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Kumar | Professional Footballer</title>
+    <meta name="description"
+        content="Portfolio of Ashok Kumar, a professional footballer showcasing achievements, skills, and journey.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="nav-container">
+            <a href="#home" class="logo">AK<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#academic" class="nav-link">Schooling</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app-root">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-container full-layout">
+                <!-- Bouncing Soccer Ball -->
+                <img src="soccer-ball.png" alt="Soccer Ball" class="animated-ball">
+
+                <div class="hero-glass-box glass-panel scroll-animate delay-1">
+                    <!-- Center Subject Image / Foreground -->
+                    <div class="subject-image">
+                        <img src="player.png" alt="Ashok Kumar" class="cutout-img">
+                    </div>
+                    <!-- Background Text -->
+                    <div class="bg-text">
+                        <h1>ASHOK<br>KUMAR</h1>
+                        <p class="hero-subtitle">Professional Footballer & Santhosh Trophy Captain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="section-container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-grid">
+                    <!-- Photo Card -->
+                    <div class="glass-card photo-card">
+                        <img src="about-photo.jpg" alt="Ashok Kumar" class="about-img">
+                    </div>
+                    <!-- Bio Content -->
+                    <div class="bio-content">
+                        <h3>Ashok Kumar P M</h3>
+                        <p>Son of late Madhavan and Saraswathy, was born on February 2, 1966, in Thrissur, Kerala. He is
+                            married to Sharmily T V, and they share a strong and supportive family life together. The
+                            couple is blessed with two children, their elder son Akash Ashok and daughter Amritheswari
+                            Ashok. Family values and strong cultural roots have always been an important part of his
+                            life journey. He is currently residing in his hometown, Thrissur, Kerala, with his family.
+                            Total students trained by him is around <strong>6000+</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Page -->
+        <section id="gallery" class="page">
+            <div class="section-container">
+                <h2 class="section-title">Photo <span>Gallery</span></h2>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="matches">Matches</button>
+                    <button class="filter-btn" data-filter="training">Training</button>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Image 1 -->
+                    <div class="glass-card gallery-item" data-category="matches">
+                        <div class="image-wrapper">
+                            <img src="gallery-1.jpg" alt="Match Action 1">
+                        </div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="glass-card gallery-item" data-category="training">
+                        <div class="image-wrapper">
+                            <img src="gallery-2.jpg" alt="Training 1">
+                        </div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="glass-card gallery-item" data-category="matches">
+                        <div class="image-wrapper">
+                            <img src="gallery-3.jpg" alt="Match Action 2">
+                        </div>
+                    </div>
+                    <!-- Image 4 -->
+                    <div class="glass-card gallery-item" data-category="matches">
+                        <div class="image-wrapper">
+                            <img src="gallery-4.jpg" alt="Match Action 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Page -->
+        <section id="achievements" class="page">
+            <div class="section-container">
+                <h2 class="section-title">Career <span>Achievements</span></h2>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tournaments">Tournaments</button>
+                    <button class="filter-btn" data-filter="awards">Awards</button>
+                    <button class="filter-btn" data-filter="club">Club</button>
+                </div>
+                <div class="achievements-grid">
+                    <!-- Achievement 2 -->
+                    <div class="glass-card achievement-card" data-category="awards">
+                        <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>AFC "A" Licence Coach</h3>
+                        <p class="year">2008</p>
+                        <p>Completed Asian Football Confederation "A" Licence Coaching Certification.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 3 -->
+                    <div class="glass-card achievement-card" data-category="tournaments">
+                        <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                        <h3>Kerala State Team Coach</h3>
+                        <p class="year">2009 & 2010</p>
+                        <p>Served as Kerala State Football Coach for Under-21 and Under-19 teams.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 4 -->
+                    <div class="glass-card achievement-card" data-category="tournaments">
+                        <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Captain – Tamil Nadu Santosh Trophy Team</h3>
+                        <p class="year">1992</p>
+                        <p>Led the Tamil Nadu Santosh Trophy Team at Coimbatore Nationals.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 5 -->
+                    <div class="glass-card achievement-card" data-category="tournaments">
+                        <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Captain – Indian Railways Santosh Trophy Team</h3>
+                        <p class="year">1990</p>
+                        <p>Captained Indian Railways team at Goa Nationals.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 6 -->
+                    <div class="glass-card achievement-card" data-category="club">
+                        <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Captain – SBI Kerala Team</h3>
+                        <p class="year">2015</p>
+                        <p>Led State Bank of India Kerala football team.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 7 -->
+                    <div class="glass-card achievement-card" data-category="awards">
+                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                        <h3>Best Footballer Award – Tamil Nadu</h3>
+                        <p class="year">1988</p>
+                        <p>Recognized as the best footballer in the state of Tamil Nadu.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                    <!-- Achievement 8 -->
+                    <div class="glass-card achievement-card" data-category="awards">
+                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                        <h3>Best Footballer Award – Kozhikode FA</h3>
+                        <p class="year">1985</p>
+                        <p>Best Footballer Award from the Kozhikode Football Association.</p>
+                        <button class="view-btn btn-outline"
+                            style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1rem;">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Details Page -->
+        <section id="academic" class="page">
+            <div class="section-container">
+                <h2 class="section-title">Schooling & <span>Graduation</span></h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <h3>Lower Primary Education</h3>
+                            <p>Kalathode LP School<br>GUPS Olari</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <h3>Higher Secondary Education</h3>
+                            <p>St. Aloysious School, Elthuruth</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <h3>Pre-Degree</h3>
+                            <p>St. Aloysious College, Elthuruth</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <h3>Graduation</h3>
+                            <p>Graduated from Chennai University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Page -->
+        <section id="contact" class="page footer-section">
+            <div class="footer-container">
+                <div class="footer-top scroll-animate delay-1">
+                    <h2 class="footer-heading">Ready to build the next victory together</h2>
+                    <a href="mailto:ashokkumar@email.com" class="footer-email glow-effect">ashokkumar@email.com</a>
+                </div>
+                <div class="footer-bottom scroll-animate delay-2">
+                    <div class="footer-col">
+                        <h4>Ashok Kumar</h4>
+                        <p>Professional Footballer</p>
+                        <p>Thrissur, Kerala</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:ashokkumar@email.com"
+                                class="footer-email-small glow-effect">ashokkumar@email.com</a></p>
+                        <p>Thrissur, Kerala</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#academic">Schooling</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <ul class="footer-socials">
+                            <li><a href="https://www.instagram.com/asokkumarpulikkaparambil?igsh=MXY3MnFxNTBtaDUweg=="
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i>
+                                    Instagram</a></li>
+                            <li><a href="https://www.facebook.com/share/18xG7Ez3UW/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer-quote">"Champions play. Leaders inspire. Legends remain."</p>
+                    <p>&copy; 2024 Ashok Kumar. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Achievements/Gallery -->
+    <div id="modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
