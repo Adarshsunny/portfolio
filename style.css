@@ -1333,6 +1333,14 @@ h4 {
         font-size: 0.8rem;
     }
 
+    .footer-academy-block {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
     .subject-image {
         position: relative;
         height: 58vh;
