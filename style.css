@@ -1054,6 +1054,71 @@ h4 {
     transform: translateY(-2px);
 }
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-contact-main {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-academy-block {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.academy-logo {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.academy-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.academy-quote {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #25D366;
+    color: #fff !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
 .footer-bottom {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
